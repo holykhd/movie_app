@@ -1,9 +1,9 @@
 import React from 'react';
 import axios from "axios";
 import Movie from "../components/Movie";
-import './Home.css';
+import './MovieRouter.css';
 
-class Home extends React.Component{
+class MovieRouter extends React.Component{
     state = {
         isLoading: true,
         movies: []
@@ -23,7 +23,7 @@ class Home extends React.Component{
         return (
             <div>
                 {isLoading ? <div>
-                        <p style={{display: 'flex', justifyContent:'center', flexDirection: 'center', alignItems:'center',fontWeight:'bold'}}>Data Loading</p>
+                        <p style={{display: 'flex', justifyContent:'center', flexDirection: 'center', alignItems:'center',fontWeight:'bold', height:'100vh'}}>Movie Data Loading</p>
                     </div>:
                     movies.map(movie => (
                         <Movie
@@ -41,4 +41,4 @@ class Home extends React.Component{
     }
 }
 
-export default Home;
+export default MovieRouter;

@@ -1,0 +1,420 @@
+a:visited, a:link, a:active, a:hover{text-decoration: none;color: inherit;}
+.innor{
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.normal		{ font-weight: 400 }
+.bold		{ font-weight: 700 }
+.bolder		{ font-weight: 800 }
+.light		{ font-weight: 300 }
+#header{
+    position: fixed;
+    width: 100%;
+    background: #FFF;
+    z-index:5012;
+    transition: all ease-in-out 0.4s
+}
+.sticky{
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.header-area{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+.header-area > .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.header-area > .logo > a{}
+.header-area > .logo > a > img{height: 56px;}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation > li > a{
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0 60px;
+    line-height: 120px;
+    transition: all ease-in-out 0.5s
+
+}
+@media (min-width: 971px) and (max-width:1400px){
+    .navigation > li > a{
+        padding: 0 30px;
+    }
+}
+@media (max-width:970px){
+    .navigation > li > a{
+        padding: 0 10px;
+    }
+}
+.navigation > li > a:hover{
+    color: #da291c;
+}
+.navigation > li {
+    position: relative;
+}
+.navigation > li::before{
+    content: '';
+    background: #da291c;
+    height: 4px;
+    display: block;
+    bottom:0;
+    width:0;
+    position: absolute;
+    transition: all ease-in-out 0.5s
+}
+.navigation > li:hover::before,
+.sub-nav > ul > li:hover::before{
+    width: 100%;
+}
+.top-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mega-menu{
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease-in-out 0.1s
+}
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+.mega-menu > .menu-bg{
+    position: absolute;
+    border-top: 1px solid #dddddd;
+    background-color: #f3f4f7;
+    width: 100%;
+    left: 0;
+}
+.mega-menu > .menu-bg > .menu-area{
+    max-width: 1000px;
+    margin:0 auto;
+}
+.mega-menu > .menu-bg > .menu-area > .sub-menu{
+    min-height: 285px;
+    display: flex;
+    justify-content: space-between;
+}
+.mega-menu > .menu-bg > .menu-area > .sub-menu > li > a{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #da291c;
+    font-weight: 700;
+}
+.mega-menu > .menu-bg > .menu-area > .sub-menu > li{
+    position: relative;
+    padding: 35px 0 0 35px;
+}
+.mega-menu > .menu-bg > .menu-area > .sub-menu > li:before{
+    content: '';
+    display: block;
+    width: 1px;
+    top: 40px;
+    left: 0;
+    bottom: 48px;
+    border-left: 1px solid #ddd;
+    position: absolute;
+}
+.mega-menu > .menu-bg > .menu-area > .sub-menu > li > .sub-nav > ul{
+}
+.mega-menu > .menu-bg > .menu-area > .sub-menu > li > .sub-nav > ul > li{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.quick-btn{
+    display: flex;
+    align-items: center;
+}
+
+.quick-btn a:first-child{
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 42px;
+    background: #da291c;
+    padding: 0 23px;
+}
+
+.main-visual{
+    background-image: url(http://lianat.kr/images/main_bg_01.jpg);
+    background-position: center bottom 170%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-menu a:hover{
+    font-weight: 800 !important;
+}
+
+.main-section01{
+    padding: 80px 0;
+}
+.main-section01 > .innor > .content{
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+}
+.main-section01 > .innor > .content > h3{
+    font-size: 48px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+.main-section01 > .innor > .content > p{
+    padding-top: 35px;
+    font-size: 16px;
+}
+
+.main-section02{
+    padding-bottom: 80px;
+}
+.main-section02 > .innor > ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-section02 > .innor > ul > li > h4:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #1e202b;
+    margin: 20px auto 40px;
+    letter-spacing: -0.5px;
+}
+.main-section02 > .innor > ul > li > h4{
+    font-size: 27px;
+}
+.main-section02 > .innor > ul > li > h4 > .counting{
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.main-section03{
+    padding-bottom: 100px;
+}
+.main-section03 > .innor{
+    background:url(http://www.lottebp.com/uploads/media/pdt_bg.png);
+    background-size: cover;
+    padding: 0 !important;
+
+}
+.main-section03 > .innor > ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-section03 > .innor > ul > li{
+    height: 50vh;
+    display: inline-block;
+    flex: 1;
+    border-right: 1px solid #ccc;
+}
+
+.main-section03 > .innor > ul > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+.main-section03 > .innor > ul > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-section03 .innor ul li{-webkit-transition:background 0.3s ease;transition:background 0.3s ease}
+.main-section03 .innor ul li:hover{background:rgba(0,0,0,0.3)}
+
+.main-section03 > .innor > ul > li > a > h5{
+    font-size: 40px;
+    line-height: 1;
+    padding-bottom: 30px;
+}
+.main-section03 > .innor > ul > li > a > h4{
+    font-size: 72px;
+    line-height: 1;
+    font-weight: 500;
+}
+.main-section03 > .innor > ul > li > a > p{
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 400;
+    padding: 15px 0 35px;
+}
+.main-section03 > .innor > ul > li > a > .more{
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 5px;
+    color: #004192;
+    font-weight: 800;
+}
+
+.main-section04{
+    height: 1120px;
+}
+.main-section04 .innor .flex{
+    display: flex;
+    justify-content: center;
+    height: 1120px;
+    align-items: center;
+    flex-direction: space-between
+}
+.main-section04 .innor .flex .txtBox .title h3{
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 1.1;
+    color: #000000;
+    padding-bottom: 30px;
+}
+.main-section04 .innor .flex .txtBox .title h3 span{
+    color: #da291c;
+    display: block;
+}
+.main-section04 .innor .flex .txtBox .title p.description{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.main-section05{
+    padding-bottom: 100px;
+}
+.main-section05 .innor .incrut-list{
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #dbdbdb;
+}
+.main-section05 .innor .incrut-list{
+    display: flex;
+    justify-content: space-between;
+    /*flex-flow: row wrap;*/
+}
+.main-section05 .innor .incrut-list li{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.main-section05 .innor .incrut-list li a{
+    width: 100%;
+    display: block;
+    padding: 50px 38px 40px;
+    min-height: 260px;
+    position: relative;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    z-index: 3;
+}
+.main-section05 .innor .incrut-list li a:hover{
+    background: #da291c;
+}
+.main-section05 .innor .incrut-list li a:hover h4,
+.main-section05 .innor .incrut-list li a:hover p{
+    color: #FFF;
+}
+.main-section05 .innor .incrut-list li a:hover p.detail{
+    background: #FFF;
+    color: #da291c;
+}
+.main-section05 .innor .incrut-list li a h4{
+    font-size: 26px;
+    line-height: 1;
+    color: #000;
+    font-weight: 500;
+    padding-bottom: 25px;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.main-section05 .innor .incrut-list li a p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.main-section05 .innor .incrut-list li a p.detail{
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFF;
+    background: #da291c;
+    padding: 5px 10px;
+    position: absolute;
+    left: 38px;
+    bottom: 50px;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.main-section05 .innor .incrut-list li:after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 0;
+    background: #eeeeee;
+}
+
+
+#footer{
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+#footer .footer-menu-area{
+    border-bottom: 1px solid #ddd;
+}
+#footer .footer-menu-area .innor .footer-area{
+    display: flex;
+    justify-content: space-between;
+}
+#footer .footer-menu-area .innor .footer-area .footer-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+#footer .footer-menu-area .innor .footer-area .footer-menu ul li{
+    padding: 0 24px;
+    position: relative;
+}
+#footer .footer-menu-area .innor .footer-area .footer-menu ul li:after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+}
+#footer .footer-menu-area .innor .footer-area .footer-select select{
+    width: 200px;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}

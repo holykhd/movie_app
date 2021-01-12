@@ -4,16 +4,24 @@ import './Movie.css';
 
 function Movie({id, title, year, summary, poster, genres}){
     return <div>
-        <h4>{title}<span>{year}</span></h4>
-        <ul>
-            {genres.map((genre, index) => (
-                <li key={index}>{genre}</li>
-            ))}
-        </ul>
-        <p className={summary}>{summary.slice(0, 100)}</p>
-        <p><img src={poster} alt={title} title={title}/></p>
-    </div>
-
+                <section className="movie-list">
+                    <div className="innor">
+                        <ul>
+                            <li>
+                                <div className="movie-card">
+                                    <h4 className="movie-title">{title} <span>{year}</span></h4>
+                                    <div className="movie-data">
+                                        <div className="movie-img">
+                                            <img src={poster} alt={title} title={title}/>
+                                        </div>
+                                        <p className="description">{summary.slice(0,160)}...</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        </div>
 }
 
 Movie.propTypes = {
