@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Movie.css"],"names":[],"mappings":"AAAA,SACI,iBAAkB,CAClB,sBACJ","file":"main.f3124978.chunk.css","sourcesContent":[".summary{\n    padding: 20px 10px;\n    backgorund-color: green\n}"]}
