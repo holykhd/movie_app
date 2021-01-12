@@ -1,7 +1,13 @@
 import React from "react";
+import {HashRouter, Route} from "react-router-dom";
+import Home from "./routes/Home";
+import About from "./routes/About";
 
 function App(){
-    return <span>Welcome</span>
+    return <HashRouter>
+        <Route path='/home' component={Home} />
+        <Route path='/about' component={About} />
+    </HashRouter>
 }
 
 export default App;
