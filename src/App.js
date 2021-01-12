@@ -12,7 +12,7 @@ function App(){
     return(
         <div>
             <HashRouter>
-                <NavigationRouter />
+            <NavigationRouter />
                 <Route path='/' exact={true} component={HomeRouter} />
                 <Route path='/movie' component={MovieRouter} />
                 <Route path='/about' component={AboutRouter} />
