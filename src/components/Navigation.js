@@ -7,7 +7,7 @@ function Navigation(){
             <header id="header">
                 <div className="header-area">
                     <h1 className="logo"><a href="/"><img
-                        src="http://www.lottebp.com/uploads/siteinfo/brading_20200514.png" alt="" title=""/></a></h1>
+                        src="https://raw.githubusercontent.com/holykhd/movie_app/master/public/img/brading_20200514.png" alt="" title=""/></a></h1>
                     <div className="top-nav">
                         <ul className="navigation">
                             <li><Link to="/">메인</Link></li>
