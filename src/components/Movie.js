@@ -1,27 +1,41 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import './Movie.css';
+import {Link} from "react-router-dom";
+
 
 function Movie({id, title, year, summary, poster, genres}){
-    return <div>
-                <section className="movie-list">
-                    <div className="innor">
-                        <ul>
-                            <li>
-                                <div className="movie-card">
-                                    <h4 className="movie-title">{title} <span>{year}</span></h4>
-                                    <div className="movie-data">
-                                        <div className="movie-img">
-                                            <img src={poster} alt={title} title={title}/>
-                                        </div>
-                                        <p className="description">{summary.slice(0,160)}...</p>
+    return (
+        <Link to={{
+            pathname: '/movieDetail',
+            state: {
+                id,
+                title,
+                year,
+                summary,
+                poster,
+                genres
+            }
+        }}>
+            <section className="movie-list">
+                <div className="innor">
+                    <ul>
+                        <li>
+                            <div className="movie-card">
+                                <h4 className="movie-title">{title} <span>{year}</span></h4>
+                                <div className="movie-data">
+                                    <div className="movie-img">
+                                        <img src={poster} alt={title} title={title}/>
                                     </div>
+                                    <p className="description">{summary.slice(0,160)}...</p>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-        </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </Link>
+    )
 }
 
 Movie.propTypes = {

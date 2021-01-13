@@ -77,7 +77,7 @@ function Home(){
             <div className="innor">
                 <div className="flex">
                     <div className="imgBox">
-                        <img src="http://www.lottebp.com/uploads/media/people.png" alt=""/>
+                        <img src="https://raw.githubusercontent.com/holykhd/movie_app/master/public/img/people.png" alt=""/>
                     </div>
                     <div className="txtBox">
                         <div className="title"><h3><span>LOTTE BP</span>PEOPLE</h3></div>

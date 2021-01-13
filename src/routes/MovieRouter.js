@@ -23,7 +23,7 @@ class MovieRouter extends React.Component{
         return (
             <div>
                 {isLoading ? <div>
-                        <p style={{display: 'flex', justifyContent:'center', flexDirection: 'center', alignItems:'center',fontWeight:'bold', height:'100vh'}}>Movie Data Loading</p>
+                        <p style={{display: 'flex', justifyContent:'center', flexDirection: 'center', alignItems:'center',fontWeight:'bold', height:'100vh'}}>Movie API Data Loading</p>
                     </div>:
                     movies.map(movie => (
                         <Movie

@@ -6,8 +6,8 @@ function Navigation(){
         <div>
             <header id="header">
                 <div className="header-area">
-                    <h1 className="logo"><a href="/"><img
-                        src="https://raw.githubusercontent.com/holykhd/movie_app/master/public/img/brading_20200514.png" alt="" title=""/></a></h1>
+                    <h1 className="logo"><Link to="/"><img
+                        src="https://raw.githubusercontent.com/holykhd/movie_app/master/public/img/brading_20200514.png" alt="" title=""/></Link></h1>
                     <div className="top-nav">
                         <ul className="navigation">
                             <li><Link to="/">메인</Link></li>

@@ -1,0 +1,17 @@
+.sub-visual{
+    width: 100%;
+    background:url(https://raw.githubusercontent.com/holykhd/movie_app/master/public/img/pdt_bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 430px;
+}
+.sub-title{
+    padding-top: 100px;
+}
+.sub-title .innor .content h3{
+    font-size: 40px;
+}
+.movie-list{
+    padding-bottom: 80px;
+}
