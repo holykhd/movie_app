@@ -10,7 +10,7 @@
  
 ## 3. 연동이 잘 됐는지 확인
  - 깃에 파일 추가하기 : git add .
- - 코멘트 작성 : git commit -m "comment~~"
+ - 코멘트 작성 : git commit -m "~~~"
  - 올려진 파일들 확인하기 : git status
  - 깃에 올리기 : git push origin master
 
