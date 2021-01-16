@@ -38,3 +38,6 @@
  
 ## 4. 빌드 결과물 배포하기 
  - npm run deploy
+
+## 5. 사이트에서 확인하기
+ - https://(GitHub ID).github.io/(Repository name)
