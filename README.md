@@ -5,6 +5,7 @@
  - 만든 주소 복사 : copy repository https://github.com/(GitHub ID)/(Repository name)
 
 ## 2. 작업중인 프로젝트와 연결하기  
+ - git 초기화 : git init
  - local에서 git과 연동하기 : git remote add origin https://github.com/(GitHub ID)/(Repository name)
  
 ## 3. 연동이 잘 됐는지 확인
